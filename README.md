@@ -1,3 +1,70 @@
+# 📚 Simple Library API
+
+Proyek ini adalah aplikasi **RESTful API** sederhana berbasis **Laravel** dan **MySQL** untuk mengelola data buku.  
+Fitur utama:
+- CRUD Buku (Create, Read, Update, Delete)
+- Menggunakan UUID sebagai primary key
+- Endpoint bisa diakses via Thunder Client / Postman
+
+---
+
+## ⚡ Prasyarat
+
+Sebelum menjalankan project, pastikan sudah terinstall:
+- PHP >= 8.2
+- Composer
+- MySQL (atau XAMPP)
+- Node.js & NPM
+- Git
+
+---
+
+## 🚀 Instalasi & Menjalankan Project
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/hudarafif/simple-library.git
+   cd simple-library
+
+2. Install Dependency PHP
+    ```bash
+    composer install
+
+3. Install Dependency Frontend (jika ada asset vite)
+    ```bash
+   npm install
+
+5. Copy file .env
+    ```bash
+   cp .env.example .env
+
+7. Generate Key
+   ```bash
+    php artisan key:generate
+
+9. Konfigurasi Database
+
+    **Edit file .env, sesuaikan dengan database MySQL kamu:**
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=simple_library
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+10. Migrasi dan Seeder Database
+    ```bash
+    php artisan migrate --seed
+
+12. Jalankan Server Laravel
+    ```bash
+    php artisan serve
+
+Aplikasi akan jalan di:
+👉 http://127.0.0.1:8000
+
+
 <<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -61,61 +128,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
-# simple-library
-Proyek ini adalah aplikasi backend sederhana berbasis Laravel + MySQL untuk mengelola data buku.
-Fitur utama meliputi:
 
-CRUD (Create, Read, Update, Delete) buku
-
-API berbasis REST (akses via Thunder Client / Postman / cURL)
-
-Menggunakan UUID sebagai primary key
-
-⚡ Prasyarat
-
-Sebelum menjalankan project, pastikan sudah terinstall di komputer:
-
--PHP >= 8.2
--Composer
--MySQL
- atau XAMPP
--Node.js & NPM
-
-🚀 Cara Menjalankan
-1. Clone Repository
-git clone https://github.com/hudarafif/simple-library.git
-cd simple-library
-
-2. Install Dependency PHP
-composer install
-
-3. Install Dependency Frontend (jika ada asset vite)
-npm install
-
-4. Copy file .env
-cp .env.example .env
-
-5. Generate Key
-php artisan key:generate
-
-6. Konfigurasi Database
-
-Edit file .env, sesuaikan dengan database MySQL kamu:
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=simple_library
-DB_USERNAME=root
-DB_PASSWORD=
-
-7. Migrasi dan Seeder Database
-php artisan migrate --seed
-
-8. Jalankan Server Laravel
-php artisan serve
-
-
-Aplikasi akan jalan di:
-👉 http://127.0.0.1:8000
->>>>>>> 8176d6debaf110603bbded03139f49f653d29752
