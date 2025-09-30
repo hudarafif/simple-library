@@ -75,14 +75,47 @@ Menggunakan UUID sebagai primary key
 
 Sebelum menjalankan project, pastikan sudah terinstall di komputer:
 
-PHP >= 8.2
-
-Composer
-
-MySQL
+-PHP >= 8.2
+-Composer
+-MySQL
  atau XAMPP
+-Node.js & NPM
 
-Node.js & NPM
+🚀 Cara Menjalankan
+1. Clone Repository
+git clone https://github.com/hudarafif/simple-library.git
+cd simple-library
 
-Git (untuk clone repository)
+2. Install Dependency PHP
+composer install
+
+3. Install Dependency Frontend (jika ada asset vite)
+npm install
+
+4. Copy file .env
+cp .env.example .env
+
+5. Generate Key
+php artisan key:generate
+
+6. Konfigurasi Database
+
+Edit file .env, sesuaikan dengan database MySQL kamu:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=simple_library
+DB_USERNAME=root
+DB_PASSWORD=
+
+7. Migrasi dan Seeder Database
+php artisan migrate --seed
+
+8. Jalankan Server Laravel
+php artisan serve
+
+
+Aplikasi akan jalan di:
+👉 http://127.0.0.1:8000
 >>>>>>> 8176d6debaf110603bbded03139f49f653d29752
