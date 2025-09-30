@@ -62,4 +62,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
 # simple-library
+Proyek ini adalah aplikasi backend sederhana berbasis Laravel + MySQL untuk mengelola data buku.
+Fitur utama meliputi:
+
+CRUD (Create, Read, Update, Delete) buku
+
+API berbasis REST (akses via Thunder Client / Postman / cURL)
+
+Menggunakan UUID sebagai primary key
+
+⚡ Prasyarat
+
+Sebelum menjalankan project, pastikan sudah terinstall di komputer:
+
+PHP >= 8.2
+
+Composer
+
+MySQL
+ atau XAMPP
+
+Node.js & NPM
+
+Git (untuk clone repository)
 >>>>>>> 8176d6debaf110603bbded03139f49f653d29752
